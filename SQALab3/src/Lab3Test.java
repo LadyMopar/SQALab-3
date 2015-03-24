@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 /**
@@ -16,17 +18,22 @@ public class Lab3Test {
 
 	@Test
 	public void testReturnEmptyFor1() {
-		assertEquals("", Lab3.primeFact(1));
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		assertEquals(list, Lab3.primeFact(1));
 	}
 
 	@Test
 	public void testReturn2For2() {
-		assertEquals("2", Lab3.primeFact(2));
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(2);
+		assertEquals(list, Lab3.primeFact(2));
 	}
 	
 	@Test
 	public void testReturn3For3() {
-		assertEquals("3", Lab3.primeFact(3));
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(3);
+		assertEquals(list, Lab3.primeFact(3));
 	}
 
 }

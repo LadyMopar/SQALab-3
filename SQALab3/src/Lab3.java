@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * 
  */
@@ -17,11 +19,12 @@ public class Lab3 {
 	 * @param i
 	 * @return a string of factors
 	 */
-	public static String primeFact(int i) {
-		if(i==1){
-			return "";
+	public static ArrayList<Integer> primeFact(int i) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		if(i!=1){
+			list.add(i);
 		}
-		return ""+i;
+		return list;
 	}
 
 }
