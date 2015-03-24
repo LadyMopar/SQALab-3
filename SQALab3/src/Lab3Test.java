@@ -19,5 +19,9 @@ public class Lab3Test {
 		assertEquals("", Lab3.primeFact(1));
 	}
 
+	@Test
+	public void testReturn2For2() {
+		assertEquals("2", Lab3.primeFact(2));
+	}
 
 }
