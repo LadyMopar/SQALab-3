@@ -7,7 +7,7 @@ import org.junit.Test;
  */
 
 /**
- * TODO Put here a description of what this class does.
+ * Test lab 3 exersizes.
  *
  * @author richarel.
  *         Created Mar 24, 2015.
