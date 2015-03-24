@@ -16,7 +16,8 @@ public class Lab3Test {
 
 	@Test
 	public void testReturnEmptyFor1() {
-		AssertEquals("", primeFact(1));
+		assertEquals("", Lab3.primeFact(1));
 	}
+
 
 }
