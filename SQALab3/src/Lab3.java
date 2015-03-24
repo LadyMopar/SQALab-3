@@ -18,10 +18,10 @@ public class Lab3 {
 	 * @return a string of factors
 	 */
 	public static String primeFact(int i) {
-		if(i==2){
-			return "2";
+		if(i==1){
+			return "";
 		}
-		return "";
+		return ""+i;
 	}
 
 }
