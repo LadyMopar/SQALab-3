@@ -23,5 +23,10 @@ public class Lab3Test {
 	public void testReturn2For2() {
 		assertEquals("2", Lab3.primeFact(2));
 	}
+	
+	@Test
+	public void testReturn3For3() {
+		assertEquals("3", Lab3.primeFact(3));
+	}
 
 }
