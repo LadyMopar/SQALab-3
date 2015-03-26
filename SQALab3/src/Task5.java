@@ -38,7 +38,7 @@ public class Task5 {
 		if (i % 2 == 0 && i != 2) {
 			return false;
 		}
-		for (int k = 3; k * k < i; k += 2) {
+		for (int k = 3; k * k <= i; k += 2) {
 			if (i > k && i % k == 0) {
 				return false;
 			}
