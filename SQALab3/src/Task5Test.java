@@ -39,9 +39,9 @@ public class Task5Test {
 	@Parameterized.Parameters
 	public static Collection checkOutputs(){
 		return Arrays.asList(new Object[][]{
-				{2,null}, //first test
+				{2, list()}, //first test
 				{3, list(2)},
-				{4, list(2,3)}
+				{4, list(3,2)}
 		});
 	}
 	

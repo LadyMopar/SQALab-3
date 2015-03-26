@@ -20,11 +20,10 @@ public class Task5 {
 	 */
 	public static Object generatePrime(Integer input) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		if (input == 3){
-			list.add(2);
-			return list;
+		for(input -= 1; input > 1; input --){
+			list.add(input);
 		}
-		return null;
+		return list;
 	}
 
 }
