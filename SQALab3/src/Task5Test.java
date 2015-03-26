@@ -44,7 +44,8 @@ public class Task5Test {
 				{4, list(2,3)},
 				{5, list(2,3)},
 				{6, list(2,3,5)},
-				{7, list(2,3,5)}
+				{7, list(2,3,5)},
+				{13, list(2,3,5,7,11)}
 		});
 	}
 	
