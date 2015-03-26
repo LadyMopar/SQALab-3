@@ -41,7 +41,8 @@ public class Task5Test {
 		return Arrays.asList(new Object[][]{
 				{2, list()}, //first test
 				{3, list(2)},
-				{4, list(3,2)}
+				{4, list(3,2)},
+				{5, list(3,2)}
 		});
 	}
 	
