@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * 
  */
@@ -17,6 +19,11 @@ public class Task5 {
 	 * @return
 	 */
 	public static Object generatePrime(Integer input) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		if (input == 3){
+			list.add(2);
+			return list;
+		}
 		return null;
 	}
 
