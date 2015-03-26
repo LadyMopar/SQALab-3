@@ -1,22 +1,52 @@
 import static org.junit.Assert.*;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 /**
  * 
  */
 
 /**
- * TODO Put here a description of what this class does.
+ * This is where I'm testing the method in Task 5 class.
  *
  * @author richarel.
  *         Created Mar 26, 2015.
  */
+@RunWith(Parameterized.class)
 public class Task5Test {
+	private Task5 primeGen;
+	private Integer input;
+	private List<Integer> output;
+	
+	
+	@Before
+	public void initialize(){
+		primeGen = new Task5();
+	}
+	
+	public Task5Test(Integer input, List<Integer> output){
+		this.input = input;
+		this.output = output;
+	}
+	
+	@Parameterized.Parameters
+	public static Collection checkOutputs(){
+		return Arrays.asList(new Object[][]{
+				{2,null} //first test
+		});
+	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testPrimeGenerator() {
+		System.out.println("Parameterized Number is: " + input);
+		assertEquals(output, Task5.generatePrime(input));
 	}
 
 }
