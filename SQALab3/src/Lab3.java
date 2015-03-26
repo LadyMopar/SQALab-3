@@ -22,7 +22,11 @@ public class Lab3 {
 	 */
 	public static List<Integer> primeFact(int i) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		if(i!=1){
+		if(i % 2 == 0){
+			list.add(2);
+			i/=2;
+		}
+		if(i>1){
 			list.add(i);
 		}
 		return list;
