@@ -19,7 +19,7 @@ import org.junit.Test;
 public class Lab3Test {
 	
 	private List<Integer> list(Integer...integers){
-		return Arrays.asList();
+		return Arrays.asList(integers);
 	}
 
 	@Test
@@ -35,6 +35,11 @@ public class Lab3Test {
 	@Test
 	public void testReturn3For3() {
 		assertEquals(list(3), Lab3.primeFact(3));
+	}
+	
+	@Test
+	public void test4(){
+		assertEquals(list(2,2), Lab3.primeFact(4));
 	}
 
 }
