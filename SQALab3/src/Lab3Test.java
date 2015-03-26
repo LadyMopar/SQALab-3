@@ -51,5 +51,10 @@ public class Lab3Test {
 	public void test8(){
 		assertEquals(list(2,2,2), Lab3.primeFact(8));
 	}
+	
+	@Test
+	public void test9(){
+		assertEquals(list(3,3), Lab3.primeFact(9));
+	}
 
 }
