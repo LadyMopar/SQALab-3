@@ -28,7 +28,7 @@ public class Task5Test {
 	
 	@Before
 	public void initialize(){
-		primeGen = new Task5();
+		this.primeGen = new Task5();
 	}
 	
 	public Task5Test(Integer input, List<Integer> output){
@@ -39,10 +39,10 @@ public class Task5Test {
 	@Parameterized.Parameters
 	public static Collection checkOutputs(){
 		return Arrays.asList(new Object[][]{
-				{2, list()}, //first test
+				{2, list()}, 
 				{3, list(2)},
-				{4, list(3,2)},
-				{5, list(3,2)}
+				{4, list(2,3)},
+				{5, list(2,3)}
 		});
 	}
 	
@@ -52,8 +52,8 @@ public class Task5Test {
 
 	@Test
 	public void testPrimeGenerator() {
-		System.out.println("Parameterized Number is: " + input);
-		assertEquals(output, Task5.generatePrime(input));
+		System.out.println("Parameterized Number is: " + this.input + " Output: " + Task5.generatePrime(this.input));
+		assertEquals(this.output, Task5.generatePrime(this.input));
 	}
 
 }

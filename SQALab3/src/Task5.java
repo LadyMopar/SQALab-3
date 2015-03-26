@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Task5 {
 
 	/**
-	 * Generates a list of prime numbers that are strictly smaller that the
+	 * Generates a list of prime numbers that are strictly smaller than the
 	 * input.
 	 * 
 	 * @param input
@@ -20,10 +20,29 @@ public class Task5 {
 	 */
 	public static Object generatePrime(Integer input) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		for(input -= 1; input > 1; input --){
-			list.add(input);
+		for (int i = 2; i < input; i++) {
+			if (isPrime(i)) {
+				list.add(i);
+			}
 		}
 		return list;
 	}
 
+	/**
+	 * Checks to see if a number is prime.
+	 * 
+	 * @param i
+	 * @return
+	 */
+	private static boolean isPrime(int i) {
+		if (i % 2 == 0 && i != 2) {
+			return false;
+		}
+		for (int k = 3; k * k < i; k += 2) {
+			if (i > k && i % k == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
 }
