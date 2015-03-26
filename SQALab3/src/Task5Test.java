@@ -40,7 +40,8 @@ public class Task5Test {
 	public static Collection checkOutputs(){
 		return Arrays.asList(new Object[][]{
 				{2,null}, //first test
-				{3, list(2)}
+				{3, list(2)},
+				{4, list(2,3)}
 		});
 	}
 	
